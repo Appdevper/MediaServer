@@ -1,0 +1,352 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:ads="http://schemas.android.com/apk/res-auto"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/bg_ishare"
+    android:orientation="vertical" >
+
+    <ScrollView
+        android:id="@+id/scrollView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical" >
+
+            <LinearLayout
+                android:id="@+id/linearLayout1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:orientation="vertical" >
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/list_selector"
+                    android:padding="5dip" >
+
+                    <TextView
+                        android:id="@+id/TextView02"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentBottom="true"
+                        android:layout_alignParentLeft="true"
+                        android:layout_alignParentRight="true"
+                        android:gravity="center"
+                        android:singleLine="true"
+                        android:text="Server Setting"
+                        android:textColor="@color/color_black"
+                        android:textSize="22dip"
+                        android:textStyle="bold"
+                        android:typeface="sans" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="4dp"
+                    android:background="@drawable/list_selector"
+                    android:padding="5dip" >
+
+                    <CheckBox
+                        android:id="@+id/cbWIFI"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:button="@drawable/checkbox_selector"
+                        android:checked="false"
+                        android:clickable="false" />
+
+                    <TextView
+                        android:id="@+id/TextView03"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentLeft="true"
+                        android:layout_centerVertical="true"
+                        android:layout_margin="3dp"
+                        android:layout_toLeftOf="@+id/cbWIFI"
+                        android:gravity="center|left"
+                        android:singleLine="true"
+                        android:text="Wifi status :"
+                        android:textColor="@color/color_black"
+                        android:textSize="22dip"
+                        android:textStyle="bold"
+                        android:typeface="sans" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="4dp"
+                    android:background="@drawable/list_selector"
+                    android:padding="5dip" >
+
+                    <TextView
+                        android:id="@+id/TextView04"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentLeft="true"
+                        android:layout_centerVertical="true"
+                        android:layout_margin="3dp"
+                        android:layout_toLeftOf="@+id/CheckBox01"
+                        android:gravity="center|left"
+                        android:singleLine="true"
+                        android:text="Name device :"
+                        android:textColor="@color/color_black"
+                        android:textSize="22dip"
+                        android:textStyle="bold"
+                        android:typeface="sans" />
+
+                    <EditText
+                        android:id="@+id/etName"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:layout_toRightOf="@+id/TextView04"
+                        android:ems="10" >
+
+                    </EditText>
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/lAuto"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="4dp"
+                    android:background="@drawable/list_selector"
+                    android:clickable="true"
+                    android:padding="5dip" >
+
+                    <CheckBox
+                        android:id="@+id/cbAuto"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:button="@drawable/checkbox_selector"
+                        android:checked="false"
+                        android:clickable="false" />
+
+                    <TextView
+                        android:id="@+id/TextView06"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentLeft="true"
+                        android:layout_centerVertical="true"
+                        android:layout_margin="3dp"
+                        android:layout_toLeftOf="@+id/CheckBox01"
+                        android:gravity="center|left"
+                        android:singleLine="true"
+                        android:text="Start server auto :"
+                        android:textColor="@color/color_black"
+                        android:textSize="22dip"
+                        android:textStyle="bold"
+                        android:typeface="sans" />
+                </RelativeLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/linearLayout2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp" >
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@color/color_gray_light"
+                    android:padding="5dip" >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentLeft="true"
+                        android:layout_alignParentRight="true"
+                        android:gravity="center"
+                        android:singleLine="true"
+                        android:text="File to share"
+                        android:textColor="@color/color_black"
+                        android:textSize="22dip"
+                        android:textStyle="bold"
+                        android:typeface="sans" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/lVideo"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="4dp"
+                    android:background="@drawable/list_selector"
+                    android:clickable="true" >
+
+                    <LinearLayout
+                        android:id="@+id/thumbnail"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:padding="3dip" >
+
+                        <ImageView
+                            android:id="@+id/m_image"
+                            android:layout_width="40dip"
+                            android:layout_height="40dip"
+                            android:alpha="1"
+                            android:src="@drawable/ic_folder" />
+                    </LinearLayout>
+
+                    <CheckBox
+                        android:id="@+id/cbVideo"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:button="@drawable/checkbox_selector"
+                        android:checked="true"
+                        android:clickable="false" />
+
+                    <TextView
+                        android:id="@+id/TextView01"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_toLeftOf="@+id/select"
+                        android:layout_toRightOf="@+id/thumbnail"
+                        android:gravity="center|left"
+                        android:singleLine="true"
+                        android:text="Videos"
+                        android:textColor="@color/color_black"
+                        android:textSize="22dip"
+                        android:textStyle="bold"
+                        android:typeface="sans" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/lAudio"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="4dp"
+                    android:background="@drawable/list_selector"
+                    android:clickable="true" >
+
+                    <LinearLayout
+                        android:id="@+id/LinearLayout02"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:padding="3dip" >
+
+                        <ImageView
+                            android:id="@+id/ImageView01"
+                            android:layout_width="40dip"
+                            android:layout_height="40dip"
+                            android:alpha="1"
+                            android:src="@drawable/ic_folder" />
+                    </LinearLayout>
+
+                    <CheckBox
+                        android:id="@+id/cbAudio"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:button="@drawable/checkbox_selector"
+                        android:checked="true"
+                        android:clickable="false" />
+
+                    <TextView
+                        android:id="@+id/TextView05"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_toLeftOf="@+id/select"
+                        android:layout_toRightOf="@+id/LinearLayout02"
+                        android:gravity="center|left"
+                        android:singleLine="true"
+                        android:text="Audios"
+                        android:textColor="@color/color_black"
+                        android:textSize="22dip"
+                        android:textStyle="bold"
+                        android:typeface="sans" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/lImage"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="4dp"
+                    android:background="@drawable/list_selector"
+                    android:clickable="true" >
+
+                    <CheckBox
+                        android:id="@+id/cbImage"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:button="@drawable/checkbox_selector"
+                        android:checked="true"
+                        android:clickable="false" />
+
+                    <LinearLayout
+                        android:id="@+id/LinearLayout03"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentLeft="true"
+                        android:layout_alignParentTop="true"
+                        android:padding="3dip" >
+
+                        <ImageView
+                            android:id="@+id/ImageView02"
+                            android:layout_width="40dip"
+                            android:layout_height="40dip"
+                            android:alpha="1"
+                            android:src="@drawable/ic_folder" />
+                    </LinearLayout>
+
+                    <TextView
+                        android:id="@+id/TextView07"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_toLeftOf="@+id/select"
+                        android:layout_toRightOf="@+id/LinearLayout03"
+                        android:gravity="center|left"
+                        android:singleLine="true"
+                        android:text="Images"
+                        android:textColor="@color/color_black"
+                        android:textSize="22dip"
+                        android:textStyle="bold"
+                        android:typeface="sans" />
+                </RelativeLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:orientation="vertical" >
+
+                <Button
+                    android:id="@+id/btRun"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/list_selector"
+                    android:gravity="center"
+                    android:padding="10dp"
+                    android:singleLine="true"
+                    android:text="START"
+                    android:textColor="@color/color_black"
+                    android:textSize="26dip"
+                    android:textStyle="bold"
+                    android:typeface="sans" />
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+</RelativeLayout>
